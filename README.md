@@ -1,2 +1,2 @@
 # explorer-rocketseat
-Programa Explorer da RocketSeat
+Programa Explorer da RocketSeat!
