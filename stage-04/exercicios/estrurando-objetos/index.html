@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        const persons = [
+            {
+                name: "Rodrigo",
+                age: 34,
+                weight: 80,
+                height: 180,
+            },
+            {
+                name: "Paula",
+                age: 20,
+                weight: 58,
+                height: 175,
+            },
+            {
+                name: "Anna",
+                age: 27,
+                weight: 53,
+                height: 190,
+            },
+        ]
+        
+        let personsNames = []
+        for(person of persons) {
+            personsNames.push(person.name)
+        }
+        alert(personsNames)
+    </script>
+</body>
+</html>

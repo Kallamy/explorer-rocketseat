@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+        const persons = [
+            {
+                name: "Rodrigo",
+                age: 34,
+                weight: 80,
+                height: 180,
+            },
+            {
+                name: "Paula",
+                age: 20,
+                weight: 58,
+                height: 175,
+            },
+            {
+                name: "Anna",
+                age: 27,
+                weight: 53,
+                height: 190,
+            },
+        ]
+
+        function calculateIMC(weight, height) {
+            return (weight / ((height/100) ** 2)).toFixed(2)
+        }
+
+        function printIMC(person) {
+            return `
+                ${person.name} tem o IMC de ${calculateIMC(person.weight, person.height)}.
+            `
+        }
+        let personsNames = []
+        for(person of persons) {
+            let message = printIMC(person)
+            alert(message)
+        }
+       
+    </script>
+</body>
+</html>

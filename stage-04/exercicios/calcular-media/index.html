@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da média</title>
+</head>
+<body>
+    <script>
+        alert("Informe as notas das três provas para receber a sua média.")
+        const n1 = Number(prompt('Nota da primeira prova:'))
+        const n2 = Number(prompt('Nota da segunda prova:'))
+        const n3 = Number(prompt('Nota da terceira prova:'))
+
+        let media = (n1 + n2 + n3) / 3
+        let condition = "Indefindo"
+        if(media >= 6) {
+            condition = "Aprovado"
+        } else if(media > 5) {
+            condition = "Recuperação"
+        } else {
+            condition = "Reprovado"
+        }
+        alert(`Sua média foi de: ${media.toFixed(2)}. Sua situação é: ${condition}`)
+    </script>
+</body>
+</html>

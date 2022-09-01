@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações matemáticas</title>
+</head>
+<body>
+    <script>
+        alert("Escolha dois números para ver o resultado das operações.")
+        firstNumber = Number(prompt("Digite o primeiro número:"))
+        secondNumber = Number(prompt("Digite o segundo número:"))
+
+        const sum = firstNumber + secondNumber
+        const sub = firstNumber - secondNumber
+        const multi = firstNumber * secondNumber
+        const div = firstNumber / secondNumber
+        alert(`${firstNumber} + ${secondNumber} =  ${sum}
+${firstNumber} - ${secondNumber} =  ${sub}
+${firstNumber} * ${secondNumber} =  ${multi}
+${firstNumber} / ${secondNumber} =  ${div.toFixed(2)}
+    `)
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de opções</title>
+</head>
+<body>
+    <script>
+        const usersList = []
+        let option
+        while(option != 3) {
+            option =  Number(prompt(`Bem vindos ao Sistema.
+            Digite o número da opção desejada:
+            1 - Cadastrar um novo usuário.
+            2 - Listar os usuários cadastrados.
+            3 - Sair do Sistema.`))
+
+            switch(option) {
+                case 1:
+                    let userName = prompt("Digite o nome do usuário que deseja cadastrar:")
+                    usersList.push(userName)
+                    break;
+                case 2:
+                    if(usersList.length == 0) {
+                        alert("Não existem usuários cadaastrados no Sistema.")
+                    } else {
+                        alert(usersList)
+                    }
+                    break;
+                case 3:
+                    alert("Você saiu do Sistema.")
+                    break;
+                default:
+                    alert("Opção invalida!")
+            }
+        }
+    </script>
+</body>
+</html>
