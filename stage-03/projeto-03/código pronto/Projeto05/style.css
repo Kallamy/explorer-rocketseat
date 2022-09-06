@@ -77,7 +77,6 @@ main {
 
 .card {
   position: relative;
-
   font-family: var(--ff-heading);
 }
 
