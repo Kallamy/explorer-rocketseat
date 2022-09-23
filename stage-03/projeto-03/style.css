@@ -71,7 +71,7 @@ header h1 {
 
 main {
     display: grid;
-    gap: 3.2rem;
+    gap: 1rem;
     padding-bottom: 10rem;
     animation: downtop 700ms 350ms backwards;
 }
@@ -157,14 +157,14 @@ main {
     
 
     main {
-        /*grid-template-columns: 1fr 1fr;*/
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 930px) {
     main {
-        grid-template-areas: "A B B"
-        "C D D";
+        grid-template-areas: "A A A"
+        "D D D";
     }
 
     main div:nth-child(1) {
